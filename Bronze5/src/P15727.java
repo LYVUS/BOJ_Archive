@@ -6,6 +6,11 @@ public class P15727 {
 
     int n = scanner.nextInt();
 
-    System.out.println((n / 5) + 1);
+    int result = n / 5;
+    if ((n % 5) != 0) {
+      result++;
+    }
+
+    System.out.println(result);
   }
 }
